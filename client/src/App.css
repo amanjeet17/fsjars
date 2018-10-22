@@ -1,0 +1,176 @@
+
+
+.main {
+    margin-top:50px;
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+select {
+padding-left: 10px;
+  margin: 50px;
+  width: 100%;
+  padding: 5px 10px !important;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  padding: 1px;
+border-width: 2px;
+border-style: inset;
+border-color: initial;
+border-image: initial;
+  height: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(http://i62.tinypic.com/15xvbd5.png) 96% / 15% no-repeat #fff;
+}
+input{
+  padding-left: 15px;
+  width: 100%;
+}
+
+.gap{
+  margin:5px 0px;
+      border-radius: 50px;
+}
+.institute{
+  margin: 10px;
+border: 5px solid;
+}
+
+div.main > div > table > tbody > a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+div.main > div > table > tbody > a a:visited{
+  color: black;
+  text-decoration: none; /* no underline */
+}
+div.main > div > table > tbody > a:hover{
+  color: black;
+  text-decoration: none; /* no underline */
+}
+.riteside{
+      display:none;
+}
+.btnsub{
+  float:right;
+  margin: 10px;
+  width:20%;
+}
+.padl{
+  padding-left:0px;
+}
+.padr{
+  padding-right:0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .labele {
+        display: none;
+    }
+    .riteside{
+        background-color: black!important;
+        color: white!important;
+        font-size: 24px!important;
+        display: block;
+    }
+    .main{
+      margin-left:0px;
+    }
+    .btnsub{
+      float:right;
+      margin: 10px;
+      width:100%;
+    }
+    .padr{
+      padding-left:0px;
+    }
+    .padl{
+      padding-right:0px;
+    }
+    .gap{
+      font-size: 20px;
+    }
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%!important;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+  td:nth-of-type(1):before { content: "S.No"; }
+  td:nth-of-type(2):before { content: "Institute "; }
+  td:nth-of-type(3):before { content: "City"; }
+  td:nth-of-type(4):before { content: "Contact"; }
+  td:nth-of-type(5):before { content: "Goto"; }
+}
+
+img {
+  width: 100%;
+}
+
+.landing {
+  position: relative;
+  background: url('./img/showcase.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
